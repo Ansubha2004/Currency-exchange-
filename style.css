@@ -1,0 +1,144 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color:blueviolet;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:15px;
+
+    
+}
+#currencyconvertor{
+    height:auto;
+    width:500px;
+    background-color:white;
+    border-radius:10px;
+    box-sizing:border-box;
+    padding:40px;
+}
+input::placeholder{
+    opacity:0.5;
+}
+#heading{
+    font-weight:bold;
+    font-size:2rem;
+    color:blueviolet;
+    margin-bottom:30px;
+}
+.inputtext{
+    color:rgb(124, 22, 22);
+    font-size:1rem;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.border{
+    height:40px;
+    width: 100%;
+    border-radius:10px;
+    box-sizing:border-box;
+    padding: 8px;
+    font-size:1.5rem;
+    border:2px solid grey;    
+}
+.margin{
+    margin-bottom:20px;
+}
+.border:hover{
+    border: 2px solid rgb(0, 0, 255,0.5);
+    cursor:pointer;
+}
+.border:focus{
+    outline:none;
+    border:2px solid rgb(0, 0, 255);
+}
+.select{
+    width:40%;
+    display:flex;
+    justify-content:space-between;
+}
+#container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+img{
+    height:40px;
+    transform:translateY(-9px);
+}
+select{
+    outline:none;
+    border-color:white;
+    display:inline-block;
+    height:100%;
+    width:54%;
+    font-size:1.066rem;
+    font-weight:bold;
+}
+#result
+{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:1.3rem;
+    padding:5px;
+    background-color:yellow;
+    box-shadow:inset white 0px 0px 76px 0px;
+}
+button{
+    background-color:rgb(79, 49, 107);
+    color:white;
+    font-size:1.2rem;
+    height:35px;
+    width:100px;;
+    border-radius:10px;
+    transform:translateX(320px);
+    cursor:pointer;
+}
+button:active{
+    background-color:rgb(79, 49, 107,0.5);
+}
+@media(max-width:375px){
+    body{
+        width:100vw;
+        height:auto;
+        align-items:flex-start;
+
+    }
+    #currencyconvertor{
+        width:90%;
+        height:auto;
+        margin:30px 0px 30px 0px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    #heading{
+        text-align:center;
+    }
+    button{
+        width:100%;
+        transform:translateX(0px);
+    }
+    #exchange{
+        width:100%;
+    }
+    #container{
+        width:100%;
+        flex-direction:column;
+
+    }
+    .select{
+        width:100%;
+    }
+    #icon{
+        transform:rotate(90deg);
+        margin:30px 0px 30px 0px;
+    }
+
+}
